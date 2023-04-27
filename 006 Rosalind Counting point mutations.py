@@ -17,7 +17,7 @@ t=input("please enter the 2nd (s) sequence: ")
 if len(s)==len(t)<1001:
     s=list(s)
     t=list(t)
-    print(s,t)
+    #print(s,t)
     h=0
 
     for i in range(len(s)):
@@ -29,7 +29,7 @@ if len(s)==len(t)<1001:
 else:
     print("Given sequences are out of range, or unequal length. PLease give sequences of equal length, max length per sequences is 1000 bases")
 
-print(s)
+
 
 
 
