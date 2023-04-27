@@ -25,12 +25,12 @@ Sample Output      19
 
 n=int(input("Enter the n-value as given in question: "))                                                                   #n=No_of_months
 k=int(input("Enter k-value as given in Question: "))                                                                       #k=Rabbit_rate_of_reproduction
-o=0                                                                                                                      #o= output at given n,k
+o=1                                                                                                                        #o= output at given n,k
 
-if n>40 and k>5:
-    print("n-value or k-value out of range, n<=40, k<=5, please enter a valid number")
+if n>40 or n==0 or k>5:
+    print("n-value or k-value out of range, required value n>0<=40 & k<=5, please enter a valid number")
 elif n<3:
-    o=1
+    print (o)
 else:
     a=0                                                                                                                  #a=otal population at 0th month=0
     b=1                                                                                                                  #b= total population at 1st month=1
@@ -39,7 +39,7 @@ else:
         globals()['o']=c
         a=b
         b=c
-print(o)
+    print(o)
 
 
 
